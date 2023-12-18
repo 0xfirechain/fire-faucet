@@ -1,0 +1,21 @@
+{
+  "name": "rinia-faucet",
+  "repository": "https://gitlab.com/Donaswap/fire-faucet",
+  "env": {
+    "WEB3_PROVIDER": {
+      "description": "JSON-RPC endpoint uri to an Firechain node",
+      "value": "https://rinia.rpc1.thefirechain.com"
+    },
+    "PRIVATE_KEY": {
+      "description": "Private key hex string of the faucet sender"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/go"
+    }
+  ]
+}
